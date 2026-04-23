@@ -1,0 +1,29 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h2>Welcome to our Agentic AI</h2>
+    <button onclick="launchAgentFromGradio()">Launch Agentic AI from Gradio</button>
+    <button onclick="launchAgentFromHuggingFace()">Launch Agentic AI from HuggingFace</button>
+
+    <script>
+    function launchAgentFromGradio(){
+        window.open("https://ab2a3d0847e0811a9f.gradio.live/", "_blank");
+    }
+
+    function launchAgentFromHuggingFace(){
+        window.open("https://huggingface.co/spaces/khoonseng/ma-rag", "_blank");
+    }
+    </script>
+
+    <form action="/main" method="post">
+        <input type = "submit" value="Main">
+    </form>
+    </div>
+</body>
+
+
+
+
